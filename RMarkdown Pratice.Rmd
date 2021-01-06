@@ -1,0 +1,33 @@
+---
+title: "RMarkdown Practice"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+2+2
+```
+```{r}
+2*8
+```
+```{r}
+4/2*3
+```
+# Hello
+## Smaller Hello
+### super cool
+_hi_
+_italics_
+```{r message=FALSE, warning=FALSE}
+#install.packages("tidyverse")
+library("tidyverse")
+```
+```{r}
+ggplot(mtcars, aes(x = factor(cyl))) +
+    geom_bar()
+```
